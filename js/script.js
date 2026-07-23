@@ -1,8 +1,3 @@
-/* =============================================
-   СКРИПТ ТУРАГЕНТСТВА «ПУТЬ ПО СНГ»
-   ============================================= */
-
-/* --- Данные туров --- */
 const TOURS = [
   {
     id: 1,
@@ -267,10 +262,6 @@ const TOURS = [
     desc: 'Полюс холода в Оймяконе, северное сияние, якутская кухня и шаманские обряды.'
   }
 ];
-
-/* =============================================
-   ИНИЦИАЛИЗАЦИЯ
-   ============================================= */
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initSlider();
@@ -282,15 +273,11 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveal();
 });
 
-/* =============================================
-   ШАПКА: фикс при скролле и бургер
-   ============================================= */
 function initHeader() {
   const header = document.getElementById('header');
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav');
 
-  // Изменение фона при прокрутке
   window.addEventListener(
     'scroll',
     () => {
@@ -300,13 +287,11 @@ function initHeader() {
     { passive: true }
   );
 
-  // Бургер меню
   burger.addEventListener('click', () => {
     burger.classList.toggle('active');
     nav.classList.toggle('mobile-open');
   });
 
-  // Закрытие меню при клике на ссылку
   nav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       burger.classList.remove('active');
@@ -314,10 +299,6 @@ function initHeader() {
     });
   });
 }
-
-/* =============================================
-   СЛАЙДЕР ПРЕИМУЩЕСТВ
-   ============================================= */
 function initSlider() {
   const track = document.querySelector('.slider-track');
   const slides = document.querySelectorAll('.slide');
@@ -330,7 +311,6 @@ function initSlider() {
   let current = 0;
   let timer = null;
 
-  // Создаём точки
   slides.forEach((_, i) => {
     const dot = document.createElement('div');
     dot.className = 'dot' + (i === 0 ? ' active' : '');
@@ -363,9 +343,6 @@ function initSlider() {
   autoPlay();
 }
 
-/* =============================================
-   РЕНДЕР КАРТОЧЕК ТУРОВ
-   ============================================= */
 function renderTours() {
   const grid = document.getElementById('tours-grid');
   if (!grid) return;
@@ -403,20 +380,14 @@ function renderTours() {
     </article>
   `
   ).join('');
-
-  // Запускаем анимации для новых карточек
   observeReveal();
 }
 
-/* =============================================
-   ФИЛЬТР ПО СТРАНАМ
-   ============================================= */
 function initFilter() {
   const buttons = document.querySelectorAll('.filter-btn');
 
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Снимаем активный класс со всех
       buttons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
@@ -430,27 +401,20 @@ function initFilter() {
     });
   });
 }
-
-/* =============================================
-   МОДАЛЬНОЕ ОКНО БРОНИРОВАНИЯ
-   ============================================= */
 function initModal() {
   const overlay = document.getElementById('modal-overlay');
   const form = document.getElementById('booking-form');
   const success = document.querySelector('.booking-success');
 
-  // Закрытие по клику на оверлей
   overlay.addEventListener('click', e => {
     if (e.target === overlay) closeModal();
   });
 
-  // Отправка формы
   form.addEventListener('submit', e => {
     e.preventDefault();
     form.style.display = 'none';
     success.style.display = 'block';
 
-    // Сброс через 3 секунды при повторном открытии
     setTimeout(() => {
       form.reset();
       form.style.display = 'grid';
@@ -459,7 +423,6 @@ function initModal() {
     }, 3000);
   });
 
-  // Закрытие по Escape
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeModal();
   });
@@ -472,7 +435,6 @@ function openModal(tourName = '') {
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 
-  // Если передали название тура — выбираем его в селекте
   if (tourName && select) {
     const option = [...select.options].find(o => o.value === tourName);
     if (option) select.value = tourName;
@@ -485,9 +447,6 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
-/* =============================================
-   ФОРМА ПОДПИСКИ
-   ============================================= */
 function initSubscribeForm() {
   const form = document.getElementById('subscribe-form');
   const msg = document.querySelector('.subscribe-msg');
@@ -499,7 +458,6 @@ function initSubscribeForm() {
     form.style.display = 'none';
     msg.style.display = 'block';
 
-    // Показываем сообщение 4 секунды
     setTimeout(() => {
       form.reset();
       form.style.display = 'flex';
@@ -508,9 +466,6 @@ function initSubscribeForm() {
   });
 }
 
-/* =============================================
-   КНОПКА «НАВЕРХ»
-   ============================================= */
 function initScrollTop() {
   const btn = document.getElementById('scroll-top');
   if (!btn) return;
@@ -523,9 +478,6 @@ function updateScrollTop() {
   btn.classList.toggle('visible', window.scrollY > 400);
 }
 
-/* =============================================
-   АНИМАЦИЯ ПОЯВЛЕНИЯ ПРИ СКРОЛЛЕ
-   ============================================= */
 function initReveal() {
   observeReveal();
 }

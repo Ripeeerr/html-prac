@@ -2,69 +2,34 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Турагентство «Путь по СНГ» — туры по России, Казахстану, Кыргызстану, Узбекистану, Армении, Грузии, Беларуси и Азербайджану."
     />
     <title>Путь по СНГ — Туристическое агентство</title>
 
-    <!-- Google Fonts -->
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="css/style.css"
-    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- =============================================
-     ШАПКА
-     ============================================= -->
-    <header
-      id="header"
-      role="banner"
-    >
+    <header id="header" role="banner">
       <div class="header-inner">
-        <!-- Логотип -->
-        <a
-          href="#hero"
-          class="logo"
-          aria-label="Путь по СНГ — на главную"
-        >
-          <div
-            class="logo-icon"
-            aria-hidden="true"
-          >
-            🧭
-          </div>
+        <a href="#hero" class="logo" aria-label="Путь по СНГ — на главную">
+          <div class="logo-icon" aria-hidden="true">🧭</div>
           <div class="logo-text">
             <span class="logo-name">Путь по СНГ</span>
             <span class="logo-sub">Туристическое агентство</span>
           </div>
         </a>
 
-        <!-- Навигация -->
-        <nav
-          class="nav"
-          id="main-nav"
-          aria-label="Основное меню"
-        >
+        <nav class="nav" id="main-nav" aria-label="Основное меню">
           <ul class="nav-list">
             <li><a href="#hero">Главная</a></li>
             <li><a href="#tours">Туры</a></li>
@@ -74,29 +39,13 @@
           </ul>
         </nav>
 
-        <!-- Контакты и кнопка -->
         <div class="header-contacts">
-          <a
-            href="tel:+78005553535"
-            class="header-phone"
-          >
-            +7 800 555-35-35
-          </a>
-          <button
-            class="btn-callback"
-            onclick="openModal()"
-          >
-            Заказать звонок
-          </button>
+          <a href="tel:+78005553535" class="header-phone">+7 800 555-35-35</a>
+          <button class="btn-callback" onclick="openModal()">Заказать звонок</button>
         </div>
 
         <!-- Бургер -->
-        <button
-          class="burger"
-          id="burger"
-          aria-label="Открыть меню"
-          aria-expanded="false"
-        >
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
@@ -105,17 +54,8 @@
     </header>
 
     <main>
-      <!-- =============================================
-       HERO
-       ============================================= -->
-      <section
-        id="hero"
-        aria-label="Главный баннер"
-      >
-        <div
-          class="hero-bg"
-          role="presentation"
-        ></div>
+      <section id="hero" aria-label="Главный баннер">
+        <div class="hero-bg" role="presentation"></div>
 
         <div class="container">
           <div class="hero-inner">
@@ -128,28 +68,13 @@
                 комфортным.
               </p>
               <div class="hero-buttons">
-                <a
-                  href="#tours"
-                  class="btn-primary"
-                >
-                  🗺️ Выбрать тур
-                </a>
-                <button
-                  onclick="openModal()"
-                  class="btn-outline"
-                >
-                  💬 Получить консультацию
-                </button>
+                <a href="#tours" class="btn-primary">🗺️ Выбрать тур</a>
+                <button onclick="openModal()" class="btn-outline">💬 Получить консультацию</button>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Статистика -->
-        <div
-          class="hero-stats"
-          aria-label="Ключевые показатели"
-        >
+        <div class="hero-stats" aria-label="Ключевые показатели">
           <div class="stat">
             <span class="stat-number">8</span>
             <span class="stat-label">стран СНГ</span>
@@ -164,18 +89,10 @@
           </div>
         </div>
       </section>
-
-      <!-- =============================================
-       СЛАЙДЕР ПРЕИМУЩЕСТВ
-       ============================================= -->
-      <section
-        id="advantages"
-        aria-label="Наши преимущества"
-      >
+      <section id="advantages" aria-label="Наши преимущества">
         <div class="container">
           <div class="slider-wrapper">
             <div class="slider-track">
-              <!-- Слайд 1 -->
               <div class="slide">
                 <div class="slide-content">
                   <h2 class="slide-title">Индивидуальные маршруты</h2>
@@ -194,7 +111,6 @@
                 </div>
               </div>
 
-              <!-- Слайд 2 -->
               <div class="slide">
                 <div class="slide-content">
                   <h2 class="slide-title">Опытные гиды</h2>
@@ -213,7 +129,6 @@
                 </div>
               </div>
 
-              <!-- Слайд 3 -->
               <div class="slide">
                 <div class="slide-content">
                   <h2 class="slide-title">Поддержка в пути</h2>
@@ -232,7 +147,6 @@
                 </div>
               </div>
 
-              <!-- Слайд 4 -->
               <div class="slide">
                 <div class="slide-content">
                   <h2 class="slide-title">Проверенные направления</h2>
@@ -251,42 +165,20 @@
                 </div>
               </div>
             </div>
-            <!-- /slider-track -->
           </div>
-          <!-- /slider-wrapper -->
-
-          <!-- Управление слайдером -->
           <div class="slider-controls">
-            <button
-              class="slider-btn"
-              id="slider-prev"
-              aria-label="Предыдущий слайд"
-            >
+            <button class="slider-btn" id="slider-prev" aria-label="Предыдущий слайд">
               &#8592;
             </button>
-            <div
-              class="slider-dots"
-              role="tablist"
-              aria-label="Навигация по слайдам"
-            ></div>
-            <button
-              class="slider-btn"
-              id="slider-next"
-              aria-label="Следующий слайд"
-            >
+            <div class="slider-dots" role="tablist" aria-label="Навигация по слайдам"></div>
+            <button class="slider-btn" id="slider-next" aria-label="Следующий слайд">
               &#8594;
             </button>
           </div>
         </div>
       </section>
 
-      <!-- =============================================
-       ПОЧЕМУ МЫ
-       ============================================= -->
-      <section
-        id="features"
-        class="section"
-      >
+      <section id="features" class="section">
         <div class="container">
           <header class="section-header">
             <span class="section-eyebrow">Для вашего удобства</span>
@@ -299,12 +191,7 @@
 
           <div class="features-grid">
             <article class="feature-card reveal">
-              <div
-                class="feature-icon"
-                aria-hidden="true"
-              >
-                🌍
-              </div>
+              <div class="feature-icon" aria-hidden="true">🌍</div>
               <h3 class="feature-title">Большой выбор направлений</h3>
               <p class="feature-text">
                 Восемь стран, более 25 готовых маршрутов и возможность составить тур под ваш запрос.
@@ -312,12 +199,7 @@
             </article>
 
             <article class="feature-card reveal">
-              <div
-                class="feature-icon"
-                aria-hidden="true"
-              >
-                📋
-              </div>
+              <div class="feature-icon" aria-hidden="true">📋</div>
               <h3 class="feature-title">Удобное бронирование</h3>
               <p class="feature-text">
                 Заявка через сайт или по телефону. Договор, чек и все документы — электронно или
@@ -326,12 +208,7 @@
             </article>
 
             <article class="feature-card reveal">
-              <div
-                class="feature-icon"
-                aria-hidden="true"
-              >
-                🤝
-              </div>
+              <div class="feature-icon" aria-hidden="true">🤝</div>
               <h3 class="feature-title">Помощь на всех этапах</h3>
               <p class="feature-text">
                 Консультируем по выбору тура, помогаем с визовыми вопросами и оформлением страховки.
@@ -339,12 +216,7 @@
             </article>
 
             <article class="feature-card reveal">
-              <div
-                class="feature-icon"
-                aria-hidden="true"
-              >
-                ✏️
-              </div>
+              <div class="feature-icon" aria-hidden="true">✏️</div>
               <h3 class="feature-title">Авторские маршруты</h3>
               <p class="feature-text">
                 Разрабатываем маршруты, которых нет в стандартных каталогах. Только проверенные
@@ -355,98 +227,30 @@
         </div>
       </section>
 
-      <!-- =============================================
-       КАТАЛОГ ТУРОВ
-       ============================================= -->
-      <section
-        id="tours"
-        class="section section--alt"
-      >
+      <section id="tours" class="section section--alt">
         <div class="container">
           <header class="section-header">
             <span class="section-eyebrow">Актуальные предложения</span>
             <h2 class="section-title">Популярные туры</h2>
             <p class="section-desc">Готовые маршруты с точной ценой. Отправление — весь сезон.</p>
           </header>
-
-          <!-- Фильтр по странам -->
-          <div
-            class="filter-bar"
-            role="group"
-            aria-label="Фильтр по странам"
-          >
-            <button
-              class="filter-btn active"
-              data-country="Все"
-            >
-              Все
-            </button>
-            <button
-              class="filter-btn"
-              data-country="Россия"
-            >
-              Россия
-            </button>
-            <button
-              class="filter-btn"
-              data-country="Казахстан"
-            >
-              Казахстан
-            </button>
-            <button
-              class="filter-btn"
-              data-country="Кыргызстан"
-            >
-              Кыргызстан
-            </button>
-            <button
-              class="filter-btn"
-              data-country="Узбекистан"
-            >
-              Узбекистан
-            </button>
-            <button
-              class="filter-btn"
-              data-country="Армения"
-            >
-              Армения
-            </button>
-            <button
-              class="filter-btn"
-              data-country="Грузия"
-            >
-              Грузия
-            </button>
-            <button
-              class="filter-btn"
-              data-country="Беларусь"
-            >
-              Беларусь
-            </button>
-            <button
-              class="filter-btn"
-              data-country="Азербайджан"
-            >
-              Азербайджан
-            </button>
+          <div class="filter-bar" role="group" aria-label="Фильтр по странам">
+            <button class="filter-btn active" data-country="Все">Все</button>
+            <button class="filter-btn" data-country="Россия">Россия</button>
+            <button class="filter-btn" data-country="Казахстан">Казахстан</button>
+            <button class="filter-btn" data-country="Кыргызстан">Кыргызстан</button>
+            <button class="filter-btn" data-country="Узбекистан">Узбекистан</button>
+            <button class="filter-btn" data-country="Армения">Армения</button>
+            <button class="filter-btn" data-country="Грузия">Грузия</button>
+            <button class="filter-btn" data-country="Беларусь">Беларусь</button>
+            <button class="filter-btn" data-country="Азербайджан">Азербайджан</button>
           </div>
 
-          <!-- Сетка туров — заполняется через JS -->
-          <div
-            id="tours-grid"
-            class="tours-grid"
-            aria-live="polite"
-          ></div>
+          <div id="tours-grid" class="tours-grid" aria-live="polite"></div>
         </div>
       </section>
 
-      <!-- =============================================
-       СОВЕТЫ ПУТЕШЕСТВЕННИКАМ
-       ============================================= -->
-      <section
-        id="tips"
-        class="section"
-      >
+      <section id="tips" class="section">
         <div class="container">
           <header class="section-header">
             <span class="section-eyebrow">Полезно знать</span>
@@ -514,14 +318,7 @@
           </div>
         </div>
       </section>
-
-      <!-- =============================================
-       О КОМПАНИИ
-       ============================================= -->
-      <section
-        id="about"
-        class="section section--alt"
-      >
+      <section id="about" class="section section--alt">
         <div class="container">
           <div class="about-grid">
             <div class="about-text reveal">
@@ -544,8 +341,6 @@
                 кажется. Мы только начинаем свой путь и будем рады сделать ваше путешествие одним из
                 первых вместе с нами.
               </p>
-
-              <!-- Числа -->
               <div class="about-facts">
                 <div class="fact">
                   <span class="fact-n">8</span>
@@ -568,22 +363,15 @@
                 </div>
               </div>
             </div>
-
-            <!-- Декоративный блок вместо фото -->
-            <div
-              class="about-visual reveal"
-            >
-            <img
-              src="https://img.magnific.com/free-photo/traveling-adventure-vacation-concept-with-compass_185193-110128.jpg"
-            >
-            <//div>
+            <div class="about-visual reveal">
+              <img
+                src="https://img.magnific.com/free-photo/traveling-adventure-vacation-concept-with-compass_185193-110128.jpg"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- =============================================
-       ПОДПИСКА
-       ============================================= -->
       <section id="subscribe">
         <div class="container">
           <div class="subscribe-inner">
@@ -593,11 +381,7 @@
             </div>
 
             <div>
-              <form
-                id="subscribe-form"
-                class="subscribe-form"
-                novalidate
-              >
+              <form id="subscribe-form" class="subscribe-form" novalidate>
                 <input
                   type="text"
                   name="name"
@@ -612,29 +396,14 @@
                   required
                   autocomplete="email"
                 />
-                <button
-                  type="submit"
-                  class="btn-subscribe"
-                >
-                  Подписаться
-                </button>
+                <button type="submit" class="btn-subscribe">Подписаться</button>
               </form>
-              <div
-                class="subscribe-msg"
-                role="alert"
-              >
-                ✅ Спасибо за подписку! Будем на связи.
-              </div>
+              <div class="subscribe-msg" role="alert">✅ Спасибо за подписку! Будем на связи.</div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <!-- /main -->
-
-    <!-- =============================================
-     МОДАЛЬНОЕ ОКНО БРОНИРОВАНИЯ
-     ============================================= -->
     <div
       id="modal-overlay"
       class="modal-overlay"
@@ -643,27 +412,12 @@
       aria-labelledby="modal-title"
     >
       <div class="modal">
-        <button
-          class="modal-close"
-          onclick="closeModal()"
-          aria-label="Закрыть"
-        >
-          ✕
-        </button>
+        <button class="modal-close" onclick="closeModal()" aria-label="Закрыть">✕</button>
 
-        <h2
-          class="modal-title"
-          id="modal-title"
-        >
-          Бронирование тура
-        </h2>
+        <h2 class="modal-title" id="modal-title">Бронирование тура</h2>
         <p class="modal-subtitle">Заполните форму — менеджер свяжется в течение рабочего дня.</p>
 
-        <form
-          id="booking-form"
-          class="form-grid"
-          novalidate
-        >
+        <form id="booking-form" class="form-grid" novalidate>
           <div class="form-group">
             <label for="b-name">Имя *</label>
             <input
@@ -701,10 +455,7 @@
 
           <div class="form-group full">
             <label for="tour-select">Тур</label>
-            <select
-              id="tour-select"
-              name="tour"
-            >
+            <select id="tour-select" name="tour">
               <option value="">— выберите тур —</option>
               <option>Алтайские приключения</option>
               <option>Байкал зимой</option>
@@ -736,77 +487,31 @@
 
           <div class="form-group">
             <label for="b-people">Количество человек</label>
-            <input
-              id="b-people"
-              name="people"
-              type="number"
-              min="1"
-              max="20"
-              placeholder="2"
-            />
+            <input id="b-people" name="people" type="number" min="1" max="20" placeholder="2" />
           </div>
 
           <div class="form-group">
             <label for="b-date">Дата поездки</label>
-            <input
-              id="b-date"
-              name="date"
-              type="date"
-            />
+            <input id="b-date" name="date" type="date" />
           </div>
 
-          <button
-            type="submit"
-            class="btn-submit"
-          >
-            Отправить заявку
-          </button>
+          <button type="submit" class="btn-submit">Отправить заявку</button>
         </form>
-
-        <!-- Сообщение об успехе -->
-        <div
-          class="booking-success"
-          role="alert"
-        >
+        <div class="booking-success" role="alert">
           <div class="success-icon">✅</div>
           <h3>Заявка отправлена</h3>
           <p>Менеджер свяжется с вами в течение рабочего дня.</p>
         </div>
       </div>
     </div>
-
-    <!-- =============================================
-     КНОПКА НАВЕРХ
-     ============================================= -->
-    <button
-      id="scroll-top"
-      aria-label="Вернуться наверх"
-    >
-      ↑
-    </button>
-
-    <!-- =============================================
-     FOOTER
-     ============================================= -->
-    <footer
-      id="footer"
-      role="contentinfo"
-    >
+    <button id="scroll-top" aria-label="Вернуться наверх">↑</button>
+    <footer id="footer" role="contentinfo">
       <div class="container">
         <div class="footer-inner">
           <!-- О компании -->
           <div class="footer-col">
-            <a
-              href="#hero"
-              class="logo footer-logo"
-              aria-label="На главную"
-            >
-              <div
-                class="logo-icon"
-                aria-hidden="true"
-              >
-                🧭
-              </div>
+            <a href="#hero" class="logo footer-logo" aria-label="На главную">
+              <div class="logo-icon" aria-hidden="true">🧭</div>
               <div class="logo-text">
                 <span class="logo-name">Путь по СНГ</span>
                 <span class="logo-sub">Туристическое агентство</span>
@@ -865,8 +570,6 @@
             </div>
           </div>
         </div>
-        <!-- /footer-inner -->
-
         <div class="footer-bottom">
           <p class="footer-copy">© 2026 Путь по СНГ. Все права защищены.</p>
           <div class="footer-links">
@@ -876,7 +579,6 @@
         </div>
       </div>
     </footer>
-
     <script src="js/script.js"></script>
   </body>
 </html>
